@@ -1,0 +1,7 @@
+name: emotion-classifier-champion-challenger
+
+entry_points:
+  evaluate:
+    parameters:
+      tracking_uri: {type: str, default: "http://127.0.0.1:5000"}
+    command: "python evaluate.py --tracking-uri {tracking_uri}"

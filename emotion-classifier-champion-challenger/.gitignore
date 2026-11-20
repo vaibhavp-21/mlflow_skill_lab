@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+mlruns/
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+mlartifacts/
+models--bhadresh-savani--distilbert-base-uncased-emotion/
+models--bhadresh-savani--bert-base-uncased-emotion/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
