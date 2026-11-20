@@ -1,0 +1,9 @@
+text,predicted_emotion,confidence,model_version,hf_model_id
+My team surprised me with a small celebration after the presentation.,surprise,0.9852943420410156,1,bhadresh-savani/distilbert-base-uncased-emotion
+I keep thinking about the goodbye at the train station.,fear,0.8262485265731812,1,bhadresh-savani/distilbert-base-uncased-emotion
+That handmade note made me feel deeply appreciated.,joy,0.9034870266914368,1,bhadresh-savani/distilbert-base-uncased-emotion
+I am furious that someone erased the work we had saved.,anger,0.9975773692131042,1,bhadresh-savani/distilbert-base-uncased-emotion
+The footsteps behind me on the empty street made me nervous.,fear,0.9975685477256775,1,bhadresh-savani/distilbert-base-uncased-emotion
+I cannot believe the old bookstore is reopening tomorrow!,joy,0.7981070876121521,1,bhadresh-savani/distilbert-base-uncased-emotion
+"After weeks of practice, I finally feel calm about the recital.",joy,0.9969869256019592,1,bhadresh-savani/distilbert-base-uncased-emotion
+I miss having long conversations with my cousin on Sundays.,anger,0.9885401129722595,1,bhadresh-savani/distilbert-base-uncased-emotion

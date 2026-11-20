@@ -1,0 +1,6 @@
+text,reference_emotion,distilbert_prediction,bert_prediction,explanation
+i love neglecting this blog but sometimes i feel for my faithful readers,love,love,joy,The models assigned different labels (love vs joy); the dataset reference label is love.
+i just feel are ludicrous and wasting space or so trite they should have looked at the book first and come up with something a little more original,surprise,surprise,sadness,The models assigned different labels (surprise vs sadness); the dataset reference label is surprise.
+i do feel terribly remourseful that i didnt stay faithful to my plans and get him sooner,love,love,joy,The models assigned different labels (love vs joy); the dataset reference label is love.
+i feel for all of you who have been supporting me is so extreme there would be no way to put a number value on it,joy,love,joy,The models assigned different labels (love vs joy); the dataset reference label is joy.
+i feel very saddened that the king whom i once quite respected as far as monarchs go was ineffectual at best,joy,joy,sadness,The models assigned different labels (joy vs sadness); the dataset reference label is joy.

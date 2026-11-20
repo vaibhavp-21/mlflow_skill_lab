@@ -1,0 +1,73 @@
+{
+  "experiment_name": "hf-emotion-champion-challenger",
+  "tracking_uri": "http://127.0.0.1:5000",
+  "dataset_name": "dair-ai/emotion",
+  "eval_samples": 200,
+  "random_seed": 42,
+  "label_names": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "models": {
+    "Model A": {
+      "name": "A_emotion_distilbert",
+      "hf_model_id": "bhadresh-savani/distilbert-base-uncased-emotion",
+      "run_id": "76b2efc467944142802b2b112d1e251a",
+      "model_uri": "runs:/76b2efc467944142802b2b112d1e251a/model",
+      "metrics": {
+        "accuracy": 0.94,
+        "macro_precision": 0.9126189220204711,
+        "macro_recall": 0.9011550772232931,
+        "macro_f1": 0.9057718372748357,
+        "weighted_f1": 0.9394131955001519,
+        "average_latency_ms": 89.44624495000083,
+        "total_inference_time_s": 17.88924899000017,
+        "model_size_mb": 256.3383083343506
+      }
+    },
+    "Model B": {
+      "name": "B_emotion_bert",
+      "hf_model_id": "bhadresh-savani/bert-base-uncased-emotion",
+      "run_id": "45d451296d784386ab714dc9121ace1e",
+      "model_uri": "runs:/45d451296d784386ab714dc9121ace1e/model",
+      "metrics": {
+        "accuracy": 0.915,
+        "macro_precision": 0.8869753508816393,
+        "macro_recall": 0.8594557564291447,
+        "macro_f1": 0.8702791692153394,
+        "weighted_f1": 0.9134884807863531,
+        "average_latency_ms": 116.6865053549998,
+        "total_inference_time_s": 23.337301070999956,
+        "model_size_mb": 418.5840120315552
+      }
+    }
+  },
+  "decision_rule": {
+    "primary_metric": "macro_f1",
+    "minimum_improvement_margin": 0.01,
+    "latency_guardrail_ratio": 5.0,
+    "latency_ratio_definition": "Model B average latency / Model A average latency"
+  },
+  "comparison": {
+    "macro_f1_difference_b_minus_a": -0.035492668059496246,
+    "latency_ratio_b_over_a": 1.304543364791064,
+    "winner": "Model A",
+    "decision_explanation": "Model A is Champion: Model B Macro-F1 improvement is -0.0355 (required >= 0.01); latency ratio B/A is 1.305 (guardrail <= 5.0).",
+    "run_id": "646e194dd7304ab7b5fe83837774f132"
+  },
+  "registry": {
+    "registered_model_name": "emotion-classifier",
+    "versions": {
+      "Model A": "1",
+      "Model B": "2"
+    },
+    "aliases": {
+      "champion": "1",
+      "challenger": "2"
+    }
+  }
+}
